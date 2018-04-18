@@ -12,6 +12,7 @@ and more...
 
 ```
 git clone https://github.com/uzzu/puppeteer-boilerplate.git
+cd puppeteer-boilerplate
 rm -rf .git
 npm install
 ```
