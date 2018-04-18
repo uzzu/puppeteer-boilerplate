@@ -20,7 +20,7 @@ npm install
 
 3. write some automation scripts in `src/Runner.js`
 
-4.If you need more cli options, edit `bin/index` and `Option` class in 'src/Runner.js'
+4. If you need more cli options, edit `bin/index` and `Option` class in 'src/Runner.js'
 
 ## LICENSE
 MIT
