@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const Runner = require('./../src/Runner');
+
+
+(async() => {
+    const option = new Runner.Option();
+    // parse option here
+
+
+    // exec script
+    const runner = new Runner(option);
+    process.on('exit', runner.requestProcessShouldExit);
+    await runner.run();
+    process.removeListener('exit', runner.requestProcessShouldExit);
+})
+
