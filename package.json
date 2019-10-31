@@ -2,24 +2,37 @@
   "name": "puppeteer-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "bin/index",
+  "main": "./dist/src/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "node bin/index",
-    "test": "$(npm bin)/mocha --require intelli-espower-loader test/*.js"
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node ./dist/src/index.js",
+    "test": "mocha --require espower-typescript/guess test/**/*.ts",
+    "test-watch": "mocha --watch-extensions ts -w --require espower-typescript/guess test/**/*.ts"
   },
   "author": "uzzu",
   "license": "MIT",
   "dependencies": {
+    "@microsoft/ts-command-line": "^4.3.4",
     "here": "0.0.2",
     "log4js": "^3.0.6",
     "optparse": "^1.0.5",
-    "puppeteer": "^1.10.0",
+    "puppeteer": "^2.0.0",
     "request": "^2.88.0",
     "string-format": "^2.0.0"
   },
   "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.3",
+    "@types/puppeteer": "^1.20.2",
+    "espower-typescript": "^9.0.2",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^5.2.0",
-    "power-assert": "^1.6.1"
+    "power-assert": "^1.6.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
   }
 }

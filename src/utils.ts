@@ -2,8 +2,8 @@
  * @param {number} milliSeconds
  * @return {!Promise}
  */
-function sleep(milliSeconds) {
-    return new Promise(resolve => setTimeout(resolve, milliSeconds));
+export function sleep(milliSeconds): Promise<void> {
+    return new Promise<void>(resolve => setTimeout(resolve, milliSeconds));
 }
 
 /**
@@ -12,14 +12,9 @@ function sleep(milliSeconds) {
  * @param {number} max maximum milliseconds
  * @return {!Promise}
  */
-function sleepRandom(min, max) {
-    return new Promise(resolve => {
+export function sleepRandom(min, max): Promise<void> {
+    return new Promise<void>(resolve => {
         const milliSeconds = Math.floor(Math.random() * (max - min + 1) + min);
         setTimeout(resolve, milliSeconds);
     });
 }
-
-module.exports = {
-    sleep: sleep,
-    sleepRandom: sleepRandom
-};

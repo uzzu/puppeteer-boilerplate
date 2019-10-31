@@ -1,13 +1,13 @@
 'use strict';
 
-const assert = require('power-assert');
-const Cancellable = require('./../src/Cancellable');
+import assert from "power-assert";
+import {Cancellable, CancellationRequestedError} from "../src/Cancellable";
 
 describe('Cancellable', () => {
     describe('defaults', () => {
         const actual = new Cancellable();
         it('should not requested', () => {
-            assert(actual.isCancellationRequested === false);
+            assert(!actual.isCancellationRequested);
         });
         it('validation should not throw Error', () => {
             assert.doesNotThrow(actual.validateNotCancelled.bind(actual));
@@ -30,10 +30,10 @@ describe('Cancellable', () => {
         const actual = new Cancellable();
         actual.cancel();
         it('should be true', () => {
-            assert(actual.isCancellationRequested === true);
+            assert(actual.isCancellationRequested);
         });
         it('validation should throw CancellationRequestedError', () => {
-            assert.throws(actual.validateNotCancelled.bind(actual), Cancellable.CancellationRequestedError);
+            assert.throws(actual.validateNotCancelled.bind(actual), CancellationRequestedError);
         });
         it('rejectIfCancelled should be reject', () => {
             return actual.rejectIfCancelled().then(
