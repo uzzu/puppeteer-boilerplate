@@ -1,20 +1,18 @@
-/**
- * @param {number} milliSeconds
- * @return {!Promise}
- */
+export function randomBetween(min: number, max: number) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
 export function sleep(milliSeconds): Promise<void> {
     return new Promise<void>(resolve => setTimeout(resolve, milliSeconds));
 }
 
 /**
- *
- * @param {number} min minimum milliseconds
- * @param {number} max maximum milliseconds
- * @return {!Promise}
+ * @param min minimum milliseconds
+ * @param max maximum milliseconds
  */
-export function sleepRandom(min, max): Promise<void> {
+export function sleepRandom(min: number, max: number): Promise<void> {
     return new Promise<void>(resolve => {
-        const milliSeconds = Math.floor(Math.random() * (max - min + 1) + min);
+        const milliSeconds = randomBetween(min, max);
         setTimeout(resolve, milliSeconds);
     });
 }
