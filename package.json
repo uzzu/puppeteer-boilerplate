@@ -16,7 +16,7 @@
   "author": "uzzu",
   "license": "MIT",
   "dependencies": {
-    "@rushstack/ts-command-line": "^5.0.1",
+    "@rushstack/ts-command-line": "^4.3.11",
     "here": "0.0.2",
     "log4js": "^6.1.2",
     "optparse": "^1.0.5",
