@@ -2,19 +2,19 @@
 # yarn lockfile v1
 
 
-"@rushstack/ts-command-line@^5.0.1":
-  version "4.3.11"
-  resolved "https://registry.yarnpkg.com/@rushstack/ts-command-line/-/ts-command-line-4.3.11.tgz#79e4ee20c42ad849e0d257790bcb3f2865c7f15a"
-  integrity sha512-Jzu52EzzHmIuc4dCrK+jLKwFCrrCtVBPCxeMFtHlODXkZ61IlVW+a+rRATkNNlSykv3G0dmedOFxQsVpVgoUpA==
+"@rushstack/ts-command-line@^4.3.11":
+  version "4.4.6"
+  resolved "https://registry.yarnpkg.com/@rushstack/ts-command-line/-/ts-command-line-4.4.6.tgz#7818f19e444274e68564a756ef62a2b4e0ced0f8"
+  integrity sha512-ue3p2m773Yea/s4Ef2Q3gEyLd9T0NDjXCl+PlodGTrJHgxoiRwbROSWHAdYJL/LceGWa6Biqizu9qxUDEWFweQ==
   dependencies:
-    "@types/argparse" "1.0.33"
+    "@types/argparse" "1.0.38"
     argparse "~1.0.9"
     colors "~1.2.1"
 
-"@types/argparse@1.0.33":
-  version "1.0.33"
-  resolved "https://registry.yarnpkg.com/@types/argparse/-/argparse-1.0.33.tgz#2728669427cdd74a99e53c9f457ca2866a37c52d"
-  integrity sha512-VQgHxyPMTj3hIlq9SY1mctqx+Jj8kpQfoLvDlVSDNOyuYs8JYfkuY3OW/4+dO657yPmNhHpePRx0/Tje5ImNVQ==
+"@types/argparse@1.0.38":
+  version "1.0.38"
+  resolved "https://registry.yarnpkg.com/@types/argparse/-/argparse-1.0.38.tgz#a81fd8606d481f873a3800c6ebae4f1d768a56a9"
+  integrity sha512-ebDJ9b0e702Yr7pWgB0jzm+CX4Srzz8RcXtLJDJB+BSccqMa36uyH/zUsSYao5+BD1ytv3k3rPYCq4mAE1hsXA==
 
 "@types/mime-types@^2.1.0":
   version "2.1.0"
@@ -1080,9 +1080,9 @@ locate-path@^3.0.0:
     path-exists "^3.0.0"
 
 lodash@^4.17.15:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 log-symbols@3.0.0:
   version "3.0.0"
