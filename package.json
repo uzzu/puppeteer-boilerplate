@@ -18,7 +18,7 @@
   "dependencies": {
     "@rushstack/ts-command-line": "^4.3.11",
     "here": "0.0.2",
-    "log4js": "^6.1.2",
+    "log4js": "^6.4.0",
     "optparse": "^1.0.5",
     "puppeteer": "^2.1.1",
     "request": "^2.88.2",
